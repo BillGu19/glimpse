@@ -17,6 +17,7 @@
 		D34ED45B236E4C65000E42B9 /* GlimpseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED45A236E4C65000E42B9 /* GlimpseUITests.swift */; };
 		D34ED469236E5241000E42B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED468236E5241000E42B9 /* LoginViewController.swift */; };
 		D34ED46B236E5908000E42B9 /* LinkedAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */; };
+		D34ED471236E95DE000E42B9 /* HenryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED470236E95DD000E42B9 /* HenryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D34ED45C236E4C65000E42B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34ED468236E5241000E42B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountsViewController.swift; sourceTree = "<group>"; };
+		D34ED470236E95DD000E42B9 /* HenryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D34ED446236E4C64000E42B9 /* Info.plist */,
 				D34ED468236E5241000E42B9 /* LoginViewController.swift */,
 				D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */,
+				D34ED470236E95DD000E42B9 /* HenryViewController.swift */,
 			);
 			path = Glimpse;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34ED469236E5241000E42B9 /* LoginViewController.swift in Sources */,
+				D34ED471236E95DE000E42B9 /* HenryViewController.swift in Sources */,
 				D34ED43D236E4C5F000E42B9 /* ViewController.swift in Sources */,
 				D34ED439236E4C5F000E42B9 /* AppDelegate.swift in Sources */,
 				D34ED46B236E5908000E42B9 /* LinkedAccountsViewController.swift in Sources */,
