@@ -195,17 +195,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94a-GD-Eyh">
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94a-GD-Eyh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Henry" id="3JP-QC-Bef">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="ouo-Lz-Df6"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="ouo-Lz-Df6">
+                                            <connections>
+                                                <action selector="Back:" destination="0M1-O8-U2f" id="j9A-RE-f4l"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item1" image="plus" catalog="system" id="rGW-w9-1TZ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Me-f7-RDC">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Me-f7-RDC">
                                 <rect key="frame" x="0.0" y="73" width="414" height="216"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRh-5O-0at">
@@ -244,6 +247,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7Me-f7-RDC" firstAttribute="leading" secondItem="gjG-a9-iNT" secondAttribute="leading" id="0rP-1D-3cl"/>
+                            <constraint firstItem="gjG-a9-iNT" firstAttribute="bottom" secondItem="7Me-f7-RDC" secondAttribute="bottom" constant="519" id="2YY-Jy-2tS"/>
+                            <constraint firstItem="7Me-f7-RDC" firstAttribute="top" secondItem="94a-GD-Eyh" secondAttribute="bottom" constant="29" id="8lX-0A-DsK"/>
+                            <constraint firstItem="7Me-f7-RDC" firstAttribute="trailing" secondItem="94a-GD-Eyh" secondAttribute="trailing" id="Hw4-ZP-7AA"/>
+                            <constraint firstItem="7Me-f7-RDC" firstAttribute="leading" secondItem="94a-GD-Eyh" secondAttribute="leading" id="LFq-Yi-BuD"/>
                             <constraint firstItem="7Me-f7-RDC" firstAttribute="centerX" secondItem="O34-LZ-oAZ" secondAttribute="centerX" id="dfa-QW-PQV"/>
                             <constraint firstItem="gjG-a9-iNT" firstAttribute="trailing" secondItem="7Me-f7-RDC" secondAttribute="trailing" id="di9-HI-hqH"/>
                         </constraints>
@@ -265,7 +272,6 @@
         <image name="plus" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uOA-H6-1uh"/>
         <segue reference="4eZ-Cy-Man"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,7 +11,7 @@ import UIKit
 class LinkedAccountsViewController: UIViewController {
     
     @IBAction func HenryButton(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "LinkedToHenry", sender: self)
     }
     
     override func viewDidLoad() {

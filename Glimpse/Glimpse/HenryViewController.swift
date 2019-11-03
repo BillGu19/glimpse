@@ -10,6 +10,9 @@ import UIKit
 
 class HenryViewController: UIViewController {
 
+    @IBAction func Back(_ sender: Any) {
+        self.performSegue(withIdentifier: "HenryToLinked", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
