@@ -134,8 +134,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BXa-1c-UZZ">
+                                <rect key="frame" x="0.0" y="82" width="414" height="306"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knf-MU-Dy6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="4pi-f0-o7K"/>
+                                            <constraint firstAttribute="height" constant="100" id="65V-8Y-k6K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Henry" backgroundImage="1"/>
+                                        <connections>
+                                            <action selector="HenryButton:" destination="XSv-uN-QIc" eventType="touchUpInside" id="rE3-0R-NVt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-fg-gc4">
+                                        <rect key="frame" x="0.0" y="103" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="sfd-Pb-a7I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Mary" backgroundImage="2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-YX-HR6">
+                                        <rect key="frame" x="0.0" y="206" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="TzH-EP-kDa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clifford" backgroundImage="1"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-kH-Ge1">
-                                <rect key="frame" x="0.0" y="-16" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Linked Accounts" id="wnv-l4-rQk">
                                         <barButtonItem key="leftBarButtonItem" title="More" image="ellipsis" catalog="system" id="bn8-K8-Dn1"/>
@@ -143,29 +176,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BXa-1c-UZZ">
-                                <rect key="frame" x="0.0" y="56" width="414" height="116"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knf-MU-Dy6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Henry"/>
-                                        <connections>
-                                            <action selector="HenryButton:" destination="XSv-uN-QIc" eventType="touchUpInside" id="rE3-0R-NVt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-fg-gc4">
-                                        <rect key="frame" x="0.0" y="39" width="414" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Mary"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-YX-HR6">
-                                        <rect key="frame" x="0.0" y="80" width="414" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Clifford"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -173,8 +183,8 @@
                             <constraint firstItem="WSH-kH-Ge1" firstAttribute="trailing" secondItem="BXa-1c-UZZ" secondAttribute="trailing" id="WhT-ai-8VQ"/>
                             <constraint firstItem="n1z-iN-11V" firstAttribute="trailing" secondItem="BXa-1c-UZZ" secondAttribute="trailing" id="atj-0y-T6O"/>
                             <constraint firstItem="BXa-1c-UZZ" firstAttribute="leading" secondItem="n1z-iN-11V" secondAttribute="leading" id="dWj-Jp-jEa"/>
-                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="top" secondItem="WSH-kH-Ge1" secondAttribute="bottom" constant="16" id="xTt-j1-HJ7"/>
-                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="centerY" secondItem="7nb-R6-8xJ" secondAttribute="centerY" constant="-307" id="ygL-pI-oW7"/>
+                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="top" secondItem="WSH-kH-Ge1" secondAttribute="bottom" constant="26" id="xTt-j1-HJ7"/>
+                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="centerY" secondItem="7nb-R6-8xJ" secondAttribute="centerY" constant="-186" id="ygL-pI-oW7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n1z-iN-11V"/>
                     </view>
@@ -267,11 +277,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="504" height="162"/>
+        <image name="2" width="500" height="160"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="ellipsis" catalog="system" width="64" height="20"/>
         <image name="plus" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uOA-H6-1uh"/>
         <segue reference="4eZ-Cy-Man"/>
     </inferredMetricsTieBreakers>
 </document>
