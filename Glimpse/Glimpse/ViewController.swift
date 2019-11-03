@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBAction func ubutton(_ sender: UIButton) {
         print("u pressed")
+        self.performSegue(withIdentifier: "HomeToLogin", sender: self)
     }
     
     

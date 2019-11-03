@@ -99,6 +99,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0u-Ar-8jj">
                                 <rect key="frame" x="183.5" y="542" width="47" height="30"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="SignInButton:" destination="HyN-jU-rJS" eventType="touchUpInside" id="6ao-0y-rCJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -115,6 +118,9 @@
                         <viewLayoutGuide key="safeArea" id="Jpw-My-BE8"/>
                     </view>
                     <navigationItem key="navigationItem" id="X0C-M6-FL1"/>
+                    <connections>
+                        <segue destination="XSv-uN-QIc" kind="show" identifier="LoginToLinked" id="J7O-sz-HCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6G-oZ-sgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,24 +131,74 @@
             <objects>
                 <viewController id="XSv-uN-QIc" customClass="LinkedAccountsViewController" customModule="Glimpse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7nb-R6-8xJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYD-op-5TH">
-                                <rect key="frame" x="136" y="177" width="54" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-kH-Ge1">
+                                <rect key="frame" x="0.0" y="-16" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Linked Accounts" id="wnv-l4-rQk">
+                                        <barButtonItem key="leftBarButtonItem" title="More" image="ellipsis" catalog="system" id="bn8-K8-Dn1"/>
+                                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="E70-fP-zVm"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BXa-1c-UZZ">
+                                <rect key="frame" x="0.0" y="56" width="414" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knf-MU-Dy6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Henry"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-fg-gc4">
+                                        <rect key="frame" x="0.0" y="39" width="414" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Mary"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-YX-HR6">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Clifford"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WSH-kH-Ge1" firstAttribute="leading" secondItem="BXa-1c-UZZ" secondAttribute="leading" id="DQT-ml-Uuw"/>
+                            <constraint firstItem="WSH-kH-Ge1" firstAttribute="trailing" secondItem="BXa-1c-UZZ" secondAttribute="trailing" id="WhT-ai-8VQ"/>
+                            <constraint firstItem="n1z-iN-11V" firstAttribute="trailing" secondItem="BXa-1c-UZZ" secondAttribute="trailing" id="atj-0y-T6O"/>
+                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="leading" secondItem="n1z-iN-11V" secondAttribute="leading" id="dWj-Jp-jEa"/>
+                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="top" secondItem="WSH-kH-Ge1" secondAttribute="bottom" constant="16" id="xTt-j1-HJ7"/>
+                            <constraint firstItem="BXa-1c-UZZ" firstAttribute="centerY" secondItem="7nb-R6-8xJ" secondAttribute="centerY" constant="-307" id="ygL-pI-oW7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n1z-iN-11V"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jcq-8z-Zcl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvc-WV-epb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="121.875"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0Kf-mG-OmA">
+            <objects>
+                <viewController id="0M1-O8-U2f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O34-LZ-oAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gjG-a9-iNT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4U-nE-3u0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="122"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="20"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
