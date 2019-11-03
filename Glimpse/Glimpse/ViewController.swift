@@ -9,9 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBAction func cbutton(_ sender: UIButton) {
+        print("c pressed")
+        self.performSegue(withIdentifier: "HomeToLogin", sender: self)
+    }
+    
+    @IBAction func ubutton(_ sender: UIButton) {
+        print("u pressed")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("main load")
         // Do any additional setup after loading the view.
     }
 
