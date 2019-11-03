@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="121.875"/>
         </scene>
-        <!--Henry View Controller-->
+        <!--HenryToSarah-->
         <scene sceneID="0Kf-mG-OmA">
             <objects>
-                <viewController id="0M1-O8-U2f" customClass="HenryViewController" customModule="Glimpse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HenryToSarah" id="0M1-O8-U2f" customClass="HenryViewController" customModule="Glimpse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O34-LZ-oAZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,6 +235,9 @@
                                         <rect key="frame" x="0.0" y="72" width="414" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Sarah"/>
+                                        <connections>
+                                            <action selector="Sarah:" destination="0M1-O8-U2f" eventType="touchUpInside" id="zwc-z7-vle"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIS-PL-L6G">
                                         <rect key="frame" x="0.0" y="108" width="414" height="36"/>
@@ -269,22 +272,96 @@
                     <navigationItem key="navigationItem" id="BOg-KY-SYe"/>
                     <connections>
                         <segue destination="XSv-uN-QIc" kind="show" identifier="HenryToLinked" id="4eZ-Cy-Man"/>
+                        <segue destination="wvU-qW-DYj" kind="show" identifier="HenryToSarah" id="PPP-aI-pQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4U-nE-3u0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2579.7101449275365" y="121.875"/>
         </scene>
+        <!--Folder View Controller-->
+        <scene sceneID="Mu8-rV-gMO">
+            <objects>
+                <viewController id="wvU-qW-DYj" customClass="FolderViewController" customModule="Glimpse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N23-j6-ntH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add To This Folder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-JV-g2v">
+                                <rect key="frame" x="135" y="151" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDf-0H-C8p">
+                                <rect key="frame" x="73" y="391" width="97" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="  Camera" image="camera" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCN-8k-AJY">
+                                <rect key="frame" x="250" y="391" width="81" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="  Photo" image="photo" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-95-ZAn">
+                                <rect key="frame" x="236" y="499" width="109" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="  Recording" image="mic" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-83-Lap">
+                                <rect key="frame" x="81" y="499" width="81" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="  Video" image="video" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVL-Yp-MgX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sarah" id="x79-F5-9uA">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="3Sd-ky-qPh">
+                                            <connections>
+                                                <action selector="Back:" destination="wvU-qW-DYj" id="5iu-3f-fmk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aC6-Ie-fA9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lxg-BO-8ev"/>
+                    <connections>
+                        <segue destination="0M1-O8-U2f" kind="show" identifier="SarahToHenry" id="0YT-Od-u0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1n-0k-86j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3347.826086956522" y="140.625"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1" width="504" height="162"/>
         <image name="2" width="500" height="160"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="camera" catalog="system" width="64" height="48"/>
         <image name="ellipsis" catalog="system" width="64" height="20"/>
+        <image name="mic" catalog="system" width="50" height="64"/>
+        <image name="photo" catalog="system" width="64" height="48"/>
         <image name="plus" catalog="system" width="64" height="58"/>
+        <image name="video" catalog="system" width="64" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uOA-H6-1uh"/>
+        <segue reference="0YT-Od-u0v"/>
         <segue reference="4eZ-Cy-Man"/>
     </inferredMetricsTieBreakers>
 </document>

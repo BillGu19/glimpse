@@ -18,6 +18,7 @@
 		D34ED469236E5241000E42B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED468236E5241000E42B9 /* LoginViewController.swift */; };
 		D34ED46B236E5908000E42B9 /* LinkedAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */; };
 		D34ED471236E95DE000E42B9 /* HenryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED470236E95DD000E42B9 /* HenryViewController.swift */; };
+		D34ED473236EA174000E42B9 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34ED472236EA174000E42B9 /* FolderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D34ED468236E5241000E42B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountsViewController.swift; sourceTree = "<group>"; };
 		D34ED470236E95DD000E42B9 /* HenryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenryViewController.swift; sourceTree = "<group>"; };
+		D34ED472236EA174000E42B9 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D34ED468236E5241000E42B9 /* LoginViewController.swift */,
 				D34ED46A236E5908000E42B9 /* LinkedAccountsViewController.swift */,
 				D34ED470236E95DD000E42B9 /* HenryViewController.swift */,
+				D34ED472236EA174000E42B9 /* FolderViewController.swift */,
 			);
 			path = Glimpse;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34ED469236E5241000E42B9 /* LoginViewController.swift in Sources */,
+				D34ED473236EA174000E42B9 /* FolderViewController.swift in Sources */,
 				D34ED471236E95DE000E42B9 /* HenryViewController.swift in Sources */,
 				D34ED43D236E4C5F000E42B9 /* ViewController.swift in Sources */,
 				D34ED439236E4C5F000E42B9 /* AppDelegate.swift in Sources */,

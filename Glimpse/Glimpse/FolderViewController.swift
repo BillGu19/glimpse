@@ -1,5 +1,5 @@
 //
-//  HenryViewController.swift
+//  FolderViewController.swift
 //  Glimpse
 //
 //  Created by Tanvi Santhosh on 11/3/19.
@@ -8,14 +8,10 @@
 
 import UIKit
 
-class HenryViewController: UIViewController {
+class FolderViewController: UIViewController {
 
-    @IBAction func Sarah(_ sender: Any) {
-        self.performSegue(withIdentifier: "HenryToSarah", sender: self)
-    }
-    
     @IBAction func Back(_ sender: Any) {
-        self.performSegue(withIdentifier: "HenryToLinked", sender: self)
+         self.performSegue(withIdentifier: "SarahToHenry", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
